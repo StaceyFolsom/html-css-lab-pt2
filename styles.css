@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("OpenSans-Regular.ttf");
+}
+
+body {
+    background-color: #f9fafc;
+    color: #69696a;
+    font-family: "Open Sans";
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 100px;
+    justify-content: space-around;
+    margin: 15px 0 5px 10px;
+    font-size: .85rem;
+}
+
+main {
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #69696a;
+}
+
+#home {
+    color: #000;
+}
+
+button {
+    background-color: #000;
+    height: 30px;
+    color: #FFF;
+    border-radius: 30px;
+    border: none;
+    width: 100%;
+    font-family: "Open Sans";
+    font-size: .8rem;
+    padding-bottom: 4px;
+}
+
+blockquote {
+    margin: 0 0 30px 0;
+    padding-left: 15px;
+    border-left: solid 3px #69696a;
+    font-size: .85rem;
+}
+
+h1 {
+    color: #000;
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 40px;
+    }
+
+    a {
+        padding-right: 10px;
+    }
+
+    blockquote {
+        width: 50vw;
+    }
+
+    .pink-circle {
+        background-color: rgba(247, 136, 167, 0.6);
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        position: absolute;
+        right: 95px;
+        top: 140px;
+        z-index: 0;
+    }
+
+    .purple-circle {
+        background-color: rgba(207, 130, 213, 0.6);
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        position: absolute;
+        right: 15px;
+        top: 190px;
+        z-index: 1;
+    }
+
+    .orange-circle {
+        background-color: rgba(247, 193, 162, 0.7);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: 280px;
+        z-index: 2;
+    }
+
+    .circles {
+        display: flex;
+    }
+ 
+    .main-section {
+        display: flex;
+        justify-content: row;
+    }
+
+    .hire-us-btn {
+        width: 70px;
+        position: absolute;
+        right: 15px;
+        top: 27px;
+    }
+
+    .scroll-btn {
+        width: 100px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: 0;
+    }
+
+}
